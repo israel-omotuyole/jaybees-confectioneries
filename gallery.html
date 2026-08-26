@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Jaybees Confectioneries</title>
+    <title>Gallery & Portfolio | Jaybees Confectioneries</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="icon" type="image/png" href="images/cup-cake-logo.webp">
     <link rel="stylesheet" href="index.css">
@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[#FAFAFA] text-[#262729]">
+
+    <!-- HEADER SECTION -->
     <header class="bg-[#bc0073] text-white">
         <nav class="flex justify-between items-center ">
             <a href="index.html"> 
@@ -34,90 +36,112 @@
             </div>
         </nav>        
     </header>
+
+    <!-- HERO BANNER -->
     <section class="bg-[#bc0073] text-white py-14 md:py-20 px-4 text-center">
         <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <p class="text-xs uppercase tracking-widest text-pink-200 mb-2 font-semibold">Behind The Flour & Passion</p>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-4">Our Sweet Journey</h1>
+            <p class="text-xs uppercase tracking-widest text-pink-200 mb-2 font-semibold">Curated Portfolio</p>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-4">Celebration Showcases</h1>
             <p class="text-sm sm:text-base text-pink-100 max-w-2xl mx-auto leading-relaxed">
-                From a single home oven in Lagos to styling milestone weddings and intimate dinner parties across Nigeria.
+                Explore our past commissions, sculpted wedding masterpieces, artisanal pastries, and curated event setups across Lagos.
             </p>
         </div>
     </section>
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 space-y-6 text-[#4A4A4A] leading-relaxed" data-aos="fade-right" data-aos-duration="1000">
-                <span class="text-xs uppercase tracking-widest text-[#bc0073] font-bold">Who We Are</span>
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#1A1A1A] font-medium leading-snug">
-                    Baking isn’t just our craft. It is how we bottle memories.
-                </h2>
-                <p class="text-sm sm:text-base">
-                    Jaybees Confectioneries began with a very simple observation: the dessert table is always where people gather, smile, and linger the longest. What started as small weekend bakes for family birthdays quickly blossomed into a dedicated confectionery brand trusted by couples, families, and corporate hosts across Lagos.
-                </p>
-                <p class="text-sm sm:text-base">
-                    We believe luxury confectionery should never trade flavor for design. Every tier we balance, every flaky crust we roll out, and every cocktail we blend is prepared from scratch with uncompromising ingredients, precise textures, and genuine warmth.
-                </p>
-                <div class="pt-4 border-l-4 border-[#bc0073] pl-4 italic text-sm text-[#262729]">
-                    "Every celebration has a heartbeat, and our job is to make sure your guests taste it in every single bite."
+
+    <!-- GALLERY SECTION -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        
+        <!-- Masonry / Asymmetric Clean Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            
+            <!-- Item 1: Large Featured Wedding Tier -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md sm:col-span-2 lg:col-span-2 aspect-[16/10] sm:aspect-[16/9]" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/Wedding cakes.jpg" alt="Wedding Masterpiece" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 sm:p-8">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Wedding Masterpiece</span>
+                    <h3 class="text-white text-lg sm:text-xl font-serif font-medium">Geometric Floating Marble Tier</h3>
+                    <p class="text-gray-300 text-xs sm:text-sm mt-1">Lekki Wedding Showcase</p>
                 </div>
             </div>
-            <div class="lg:col-span-5" data-aos="fade-left" data-aos-duration="1000">
-                <div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="images/who-we-are.jpg" alt="" class="w-full h-full object-cover">
+
+            <!-- Item 2: Event Cakes -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md aspect-[3/4]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                <img src="images/event cakes.jpg" alt="Event Cakes" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Celebration Cakes</span>
+                    <h3 class="text-white text-base font-serif font-medium">Artisanal Layered Delights</h3>
+                    <p class="text-gray-300 text-xs mt-1">Private Reception</p>
+                </div>
+            </div>
+
+            <!-- Item 3: Birthday Cake -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md aspect-square" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <img src="images/birthday-image.jpg" alt="Birthday Cake" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Birthday</span>
+                    <h3 class="text-white text-base font-serif font-medium">Custom Luxury Celebration Cake</h3>
+                    <p class="text-gray-300 text-xs mt-1">Milestone Jubilee</p>
+                </div>
+            </div>
+
+            <!-- Item 4: Hall Ambience -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md aspect-square" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <img src="images/Hall ambience.jpg" alt="Hall Ambience" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Event Styling</span>
+                    <h3 class="text-white text-base font-serif font-medium">Curated Dessert Table & Hall Setup</h3>
+                    <p class="text-gray-300 text-xs mt-1">Victoria Island Gala</p>
+                </div>
+            </div>
+
+            <!-- Item 5: Pastries -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md aspect-square" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                <img src="images/pasteries.jpg" alt="Gourmet Pastries" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Savory & Sweet</span>
+                    <h3 class="text-white text-base font-serif font-medium">Gourmet Pastries & Finger Foods</h3>
+                    <p class="text-gray-300 text-xs mt-1">Corporate Catering</p>
+                </div>
+            </div>
+
+            <!-- Item 6: Signature Cocktails -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md aspect-[3/4]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <img src="images/cocktails.jpg" alt="Cocktails" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Signature Drinks</span>
+                    <h3 class="text-white text-base font-serif font-medium">Fresh Fruit Mocktails & Slushies</h3>
+                    <p class="text-gray-300 text-xs mt-1">Outdoor Event Bar</p>
+                </div>
+            </div>
+
+            <!-- Item 7: Weddings Planning Setup -->
+            <div class="group relative overflow-hidden rounded-3xl bg-zinc-200 shadow-md sm:col-span-2 lg:col-span-2 aspect-[16/10] sm:aspect-[16/9]" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <img src="images/weddings.jpg" alt="Weddings Setup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 sm:p-8">
+                    <span class="text-[#FF00A0] text-xs font-semibold uppercase tracking-widest">Event Planning</span>
+                    <h3 class="text-white text-lg sm:text-xl font-serif font-medium">Grand Wedding Backdrops & Decor</h3>
+                    <p class="text-gray-300 text-xs sm:text-sm mt-1">Ikeja Grand Ballroom</p>
                 </div>
             </div>
 
         </div>
+
     </section>
-    <section class="bg-[#F4F4F6] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center max-w-xl mx-auto mb-12 md:mb-16" data-aos="fade-up" data-aos-duration="800">
-                <span class="text-xs uppercase tracking-widest text-[#bc0073] font-bold">The Standard</span>
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#1A1A1A] font-medium mt-2">
-                    What Sets Jaybees Apart
-                </h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="w-12 h-12 rounded-xl bg-[#bc0073]/10 text-[#bc0073] flex items-center justify-center text-xl font-bold mb-6">
-                        01
-                    </div>
-                    <h3 class="text-lg font-serif font-semibold text-[#1A1A1A] mb-3">Flavors Built From Scratch</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        We reject shortcuts, pre-mixes, and overly sugary coatings. Our sponge recipes and fillings are carefully calibrated to deliver authentic, moist richness.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <div class="w-12 h-12 rounded-xl bg-[#bc0073]/10 text-[#bc0073] flex items-center justify-center text-xl font-bold mb-6">
-                        02
-                    </div>
-                    <h3 class="text-lg font-serif font-semibold text-[#1A1A1A] mb-3">Architectural Precision</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        From delicate floating tiers to textured buttercream gradients, our wedding and celebration cakes are engineered to stand flawless all day at your venue.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                    <div class="w-12 h-12 rounded-xl bg-[#bc0073]/10 text-[#bc0073] flex items-center justify-center text-xl font-bold mb-6">
-                        03
-                    </div>
-                    <h3 class="text-lg font-serif font-semibold text-[#1A1A1A] mb-3">Total Event Harmony</h3>
-                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        We don't just drop off boxes. We curate complete dessert setups, signature mocktail stations, and backdrop styling tailored directly to your wedding colors.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center" data-aos="fade-up" data-aos-duration="1000">
-        <div class="bg-[#bc0073] rounded-3xl p-8 sm:p-14 text-white shadow-xl">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4">Let’s Plan Your Next Event</h2>
-            <p class="text-sm sm:text-base text-pink-100 max-w-xl mx-auto mb-8">
-                Whether you have an exact cake design in mind or want our styling team to build your dessert concept from scratch, we are here to bring it to life.
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="bg-[#262729] rounded-3xl p-8 sm:p-14 text-white shadow-xl border border-white/5">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-medium mb-3">Envisioning Something Unique?</h2>
+            <p class="text-xs sm:text-sm text-gray-300 max-w-lg mx-auto mb-8 leading-relaxed">
+                Bring your dream event concept or custom cake sketch to us. We turn creative visions into memorable centerpieces.
             </p>
-            <a href="contact.html" class="inline-block bg-white hover:bg-gray-100 text-[#9E2372] font-bold px-8 py-3.5 rounded-full shadow-lg transition-all duration-200 text-xs uppercase tracking-widest">
-                Start a Conversation
+            <a href="contact.html" class="inline-block bg-[#bc0073] hover:bg-[#9E2372] text-white font-semibold px-8 py-3.5 rounded-full shadow-lg transition-all duration-200 text-xs uppercase tracking-widest">
+                Book A Consultation
             </a>
         </div>
     </section>
+
+    <!-- FOOTER SECTION -->
     <footer class="relative w-full text-white mt-24 sm:mt-32">
         <div style="background-image: url('images/Vector 10.png');" class="hidden lg:block absolute inset-0 bg-cover bg-top bg-no-repeat pointer-events-none z-0"></div>
         <div class="lg:hidden absolute inset-0 bg-[#262729] z-0"></div>
@@ -193,6 +217,7 @@
         </div>          
     </footer>
 
+    <!-- AOS Script only -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
